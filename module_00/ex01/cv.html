@@ -4,6 +4,12 @@
     <title>Il mio CV</title>
 </head>
 <body>
+	<style>
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
     <header>
         <h1>Il mio CV</h1>
     </header>
@@ -23,17 +29,32 @@
                 <li>Periodo: 2015 - 2020</li>
             </ul>
         </section>
-
+		<h2>Istruzione</h2>
+		<ol>
+			<li>
+				Laurea in Informatica presso l'Università XYZ <br>
+				Anno di laurea: 2015
+			</li>
+			<li>Diploma scientifico presso l'istituto ABC<br>
+			Anno di diploma: 2222</li>
+		</ol>
         <table>
-            <h2>Istruzione</h2>
-            <ol>
-                <li>Laurea in Informatica presso l'Università XYZ</li>
-                <li>Anno di laurea: 2015</li>
-            </ol>
-			<ol>
-				<li>Diploma scientifico presso l'istituto ABC</li>
-				<li>Anno di diploma: 3333</li>
-			</ol>
+			<thead>
+				<tr>
+					<th style="border: 1px solid black; padding: 5px;">Lingua</th>
+					<th style="border: 1px solid black; padding: 5px;">Livello</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="border: 1px solid black; padding: 5px;">Italiano</td>
+					<td style="border: 1px solid black; padding: 5px;">Madrelingua</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid black; padding: 5px;">Inglese</td>
+					<td style="border: 1px solid #424242; padding: 5px;">B2</td>
+				</tr>
+			</tbody>
         </table>
     </main>
 
