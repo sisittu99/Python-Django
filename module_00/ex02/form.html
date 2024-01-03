@@ -23,15 +23,21 @@
 				<legend>
 					Gender:
 				</legend>
-				<label for="male">Male</label>
-				<input type="radio" id="male" name="male" value="male" />
-				<label for="female">Female</label>
-				<input type="radio" id="female" name="female" value="female" />
-				<label for="other">Other</label>
-				<input type="radio" id="other" name="other" value="other" checked/>
+				<div>
+					<label for="male">Male</label>
+					<input type="radio" id="gender_male" name="gender" value="male" />
+				</div>
+				<div>
+					<label for="female">Female</label>
+					<input type="radio" id="gender_female" name="gender" value="female" />
+				</div>
+				<div>
+					<label for="other">Other</label>
+					<input type="radio" id="gender_other" name="gender" value="other" checked/>
+				</div>
 			</fieldset>
 
-			<button type="submit" onclick="displayFormContent()">Invia</button>
+			<button type="submit" onclick="displayFormContents()">Invia</button>
 		</form>
 		<script src="popup.js"></script>
 	</body>
