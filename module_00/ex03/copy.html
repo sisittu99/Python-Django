@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Rielaborazione schema</title>
+	<style>
+		.container {
+			display: flex;
+		}
+		.column {
+			flex: 1;
+			padding: 10px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Rielaborazione schema</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <table>
-    <tr>
-      <td>Frontend</td>
-      <td>Backend</td>
-    </tr>
-    <tr>
-      <td>HTML5</td>
-      <td>80%</td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td>PHP</td>
-    </tr>
-  </table>
+	<div class="container">
+		<div class="column">
+			<h2>Frontend</h2>
+			<div class="progress-container">
+				<p>HTML5</p>
+				<progress id="HTML5" value="80" max="100"></progress>
+			</div>
+			<div class="progress-container">
+				<p>CSS3</p>
+				<progress value="60" max="100"></progress>
+			</div>
+			<div class="progress-container">
+				<p>jQuery</p>
+				<progress value="50" max="100"></progress>
+			</div>
+		</div>
+		<div class="column">
+			<h2>Backend</h2>
+			<div class="progress-container">
+				<p>Python</p>
+				<progress value="75" max="100"></progress>
+			</div>
+			<div class="progress-container">
+				<p>PHP</p>
+				<progress value="65" max="100"></progress>
+			</div>
+			<div class="progress-container">
+				<p>Node.js</p>
+				<progress value="35" max="100"></progress>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
